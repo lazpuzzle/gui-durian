@@ -60,12 +60,11 @@ def Calculate(event=None):
         messagebox.showinfo('Error', 'Error something')
     
     v_quantity.set('') # clear data
-    B1.focus()
-    # E1.focus()
+    E1.focus()
 
 GUI = Tk()
 GUI.geometry('600x500')
-GUI.title('my program')
+GUI.title('my program v.0.0.1')
 
 file = PhotoImage(file='rw.png',height=100,width=100)
 IMG = Label(GUI, image=file,text='')
@@ -94,5 +93,5 @@ def SummaryData(event):
     messagebox.showinfo(title,text)
 GUI.bind('<F1>', SummaryData)
 
-B1.focus() # ให้ cursor ย้ายไปยังตำแหน่งของ E1
+E1.focus() # ให้ cursor ย้ายไปยังตำแหน่งของ E1
 GUI.mainloop()
